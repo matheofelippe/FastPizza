@@ -7,22 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Login</title>
-</head>
+</head> 
+<link rel="stylesheet" href="style.css">
+<title>FastPizza home</title>
+<h1><b><img src="assets/fast-pizza-logo-cartoon-this-logo-is-highly-suitable-for-any-pizza-related-restaurant-fast-food-delivery-trattoria-bistro-catering-and-italian-food-related-businesses-vector.jpg" alt="" height="300" width="500"></b></h1>
+<h1>Cardápio</h1>
+<nav>
+     
+    <div class="nav-left">
+        <a href="home.html">Home</a>
+        <a href="pizzas_salgada.html">Pizza salgada</a>
+        <a href="pizza_doce.html">Pizza doce</a>
+        <a href="bebidas.html">Bebidas</a>
+    </div>
+    <div class="nav-right">
+        <a class="spacer" href="login_page.html">Login</a>
+        <span class="spacer"></span> 
+        <a class="spacer" href="create_account.html">Criar conta</a>
+        <a class="spacer" href="Carrinho.html"><img src="assets/kisspng-shopping-cart-software-online-shopping-lower-middle-class-5b188c80076866.5442195715283354880304.png" width="25" height="25"></a>
+    </div>
+</nav>
 
 <body>
-    <h1>Página de login</h1>
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="cardapio.html">Cardapio</a>
-        <a class="navbar" href="create_account.html">Criar conta</a>
-        <a class="navbar" href="login_page.html">Login</a>
-    </nav>
-    <div class="campos">
-        <input type="text" placeholder="Usuário"> <br>
-        <input type="password" placeholder="Senha"> <br>
-
-        <a href="home.html"> <button>Login</button> </a>
+    <div class="container">
+      <div class="center">
+          <h1>Login</h1>
+          <form action="" method="POST">
+              <div class="txt_field">
+                  <input type="text" name="text" required>
+                  <span></span>
+                  <label>Usuario</label>
+              </div>
+              <div class="txt_field">
+                  <input type="password" name="password" required>
+                  <span></span>
+                  <label>Senha</label>
+              </div>
+              <div class="pass">Esqueceu a sua senha?</div>
+              <input name="submit" type="Submit" value="Login">
+              <div class="signup_link">
+                Não é um cliente ?<a href="login_page.html"> Cadastre-se</a>
+              </div>
+          </form>
+      </div>
     </div>
-</body>
+  </body>
 
 </html>
