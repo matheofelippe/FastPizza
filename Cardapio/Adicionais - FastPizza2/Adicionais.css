@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend", sans-serif;
+}
+
+.Carrinho {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 1500px;
+    height: 850px; /* Para manter o card como um quadrado */
+    background-color: rgb(255, 255, 255);
+    border-radius: 28px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid black;
+}
+
+.rodape {
+    font-size: 26px;
+    display: flex;
+    justify-content: left;
+    padding: 70px 20px 16px;
+    gap: 30px;
+}
+
+.valor {
+    color: red;
+    text-shadow: 1px 1px 1px rgb(146, 146, 146);
+    font-size: 40px;
+    margin-top: 20px; /* Fixed margin-top value */
+    justify-content: left;
+}
+
+.pizzasSection {
+    padding: 0 335px 0;
+    justify-content: left;
+}
+
+.Ingredientes {
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px 20px 16px;
+    gap: 30px;
+}
+
+.Ingredientes h2 {
+    margin-bottom: 0;
+}
+
+.card1 {
+    width: 600px;
+    height: 400px; /* Para manter o card como um quadrado */
+    background-color: #EFEFEF;
+    border-radius: 28px;
+    position: fixed;
+    top: 75%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+}
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o contador e o título */
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    border-radius: 10px; /* Borda arredondada */
+    background-color: #ffffff; /* Fundo branco */
+    padding: 0;
+    margin-bottom: 5px;
+    width: fit-content; /* Define a largura do contador conforme o conteúdo */
+    margin-left: 28px; /* Adiciona espaço ao lado esquerdo */
+    margin-top: 20px; /* Adiciona espaço ao topo */
+}
+
+.counter-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Remove a margem padrão do h2 */
+}
+
+.increment,
+.decrement {
+    background-color: #ffffff;
+    color: #ff0000;
+    font-size: 20px; /* ou font-size: 12px; */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50px; /* Borda arredondada */
+    cursor: pointer;
+    margin: 0;
+}
+
+.count {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.pizza-image {
+    float: right; /* Para posicionar a imagem no canto direito */
+    margin-top: 0px; /* Para adicionar uma margem superior de 20 pixels */
+    margin-right: 150px; /* Para adicionar uma margem direita de 20 pixels */
+    height: 450px;
+    width: 450px;
+    border-radius: 50%; /* Para tornar a imagem redonda */
+}
+
+.total {
+    font-size: 30px; /* Tamanho da fonte */
+    position: relative; /* Posição relativa */
+    top: 10px; /* Posição para deslocamento vertical */
+    text-align: center;
+
+}
+.add-to-cart-button {
+    background-color: orange;
+    color: white;
+    font-size: 24px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 300px; /* Definindo uma largura fixa */
+    height: 50px;
+    margin: 30px auto 0; /* Centralizando o botão verticalmente e alinhando ao centro horizontalmente */
+    display: block;
+}
+
