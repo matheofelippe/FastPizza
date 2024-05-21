@@ -1,0 +1,359 @@
+@media only screen and (max-width: 768px) {
+
+    .pizza {
+        height: 800px;
+        width: 100%;
+    }
+    
+    .img3{
+        width: 330px;
+        height: 320px;
+        margin-top: 72%;
+        padding-left: 10px;
+        
+        
+    }
+
+    .pizza h1{
+        font-size: 45px;
+        margin-top: 60%;
+        padding-left: 90%;
+    }
+
+    .pizza h2{
+        font-size: 20px;
+        padding-left: 90%;
+        margin-top: -5%;
+        width: 200%;
+        
+    }
+
+    .pizza button{
+        width: 230px;
+        height: 55px;
+        font-size: 25px;
+        margin-left: 95%;
+        margin-top: 10%;
+        
+    }
+
+    .img1{
+        width: 76px;
+        height: 76px;
+        position: absolute;
+        left: 9%;
+        top: 2%;
+        
+    }
+
+    .img2{
+        width: 60px;
+        height: 60px;
+        margin-left: 15%;
+        top: 3%;
+    }
+
+    
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        width: 100%;
+    }
+        
+
+    .sobre img{
+        width: 50%;
+        height: 1000px;
+        margin-top: 232%;
+        
+        
+    }
+
+    .txS{
+        color: #fff;
+        max-width: 500px;
+        margin-top: 20%;
+        
+    }
+    
+    .sobre h1{
+        font-size: 15px;
+        font-family: fantasy;
+        font-size: 35px;
+        max-height: 600px;
+      
+        
+    }
+    
+    .sobre h2{
+        font-size: 15px;
+        font-family: fantasy;
+        max-width: 600px;
+       
+        
+        
+    }
+
+    .sobre button{
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        width: 230px;
+        height: 55px;
+        font-size: 25px;
+        border: none;
+        border-radius: 30px;
+        font-family: fantasy;
+        margin-top: 300%;
+    }
+    
+    .pdt{
+        height: 1550px;
+        width: 100%;
+        justify-content: center;
+        background-color: #EFEFEF;
+    }
+    
+    
+    .pdt h2{
+        margin-top: 10px;
+    }
+    
+    .card{
+        width: 300px;
+        height: 330px;
+        margin-top: 60px;
+        margin-left: 13%;
+    }
+    
+    .card2{
+        width: 300px;
+        height: 330px;
+        margin-top: 60px;
+        margin-left: 13%;
+    }
+    
+    .card3{
+        width: 300px;
+        height: 330px;
+        margin-top: 60px;
+        margin-left: 13%;
+    }
+    
+    .botao button{
+        left: 48%;
+        margin-top: 275%;
+    }
+
+    .opc{
+        height: 1350px;
+        width: 100%;
+    }
+    
+    .txo{
+        font-size: 20px;
+    }
+    
+    .card4{
+        width: 350px;
+        height: 370px;
+        margin-top: 50px;
+        margin-left: 7%;
+    }
+    
+    
+    .card5{
+        width: 350px;
+        height: 370px;
+        margin-top: 20px;
+        margin-left: 7%;
+    }
+    
+    .card6{
+        width: 350px;
+        height: 370px;
+        margin-top: 20px;
+        margin-left: 7%;
+    }
+    
+    .rodape{
+        height: 750px;
+        width: 100%;
+    }
+    
+    .rodape img{ 
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+    .img3{
+       padding-left: 10%;
+    }
+
+    .img2{
+        width: 80px;
+        height: 80px;
+        margin-left: 3%;
+        top: 9%;
+    }
+
+    .botao button{
+        left: 50%;
+        margin-top: 41%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .img3{
+        padding-left: 15%;
+        width: 400px;
+        height: 400px;
+        margin-top: 36%;
+        }
+    
+
+    .pizza h1{
+        font-size: 55px;
+        margin-top: 60%;
+        padding-left: 20px;
+    }
+
+    .pizza h2{
+        font-size: 30px;
+        padding-left: 20px;
+    }
+
+    .pizza button{
+        width: 230px;
+        height: 55px;
+        font-size: 25px;
+        margin-left: 13%;
+        margin-top: 15%;
+    }
+
+    .img2{
+        width: 80px;
+        height: 80px;
+        margin-left: 6%;
+        top: 9%;
+    }
+
+    .sobre img{
+        width: 100%;
+    }
+
+    .sobre{
+        height: 700px;
+        width: 100%;
+        background-color: #ff7018;
+        
+    }
+    .txS{
+        color: #fff;
+        max-width: 300px;
+        
+    }
+    
+    .sobre h1{
+        font-size: 24px;
+        font-family: fantasy;
+        font-size: 35px;
+        max-height: 100px;
+        margin-top: -20%;
+        
+    }
+    
+    .sobre h2{
+        font-size: 25px;
+        font-family: fantasy;
+        max-width: 600px;
+        
+        
+    }
+
+    .sobre button{
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        width: 230px;
+        height: 55px;
+        font-size: 25px;
+        border: none;
+        border-radius: 30px;
+        font-family: fantasy;
+        
+    }
+
+    .pdt{
+        height: 1150px;
+        width: 100%;
+        justify-content: center;
+        background-color: #EFEFEF;
+    }
+    
+    
+    .pdt h2{
+        margin-top: 10px;
+    }
+    
+    .card{
+        width: 300px;
+        height: 330px;
+        margin-top: 60px;
+        margin-left: 9%;
+    }
+    
+    .card2{
+        width: 300px;
+        height: 330px;
+        margin-top: 60px;
+        margin-left: 13%;
+    }
+    
+    .card3{
+        width: 300px;
+        height: 330px;
+        margin-top: 60px;
+        margin-left: 33%;
+    }
+    
+    .botao button{
+        left: 48%;
+       margin-top: 55%;
+      
+    }
+
+    .opc{
+        height: 900px;
+        width: 100%;
+    }
+    
+    .txo{
+        font-size: 20px;
+    }
+    
+    .card4{
+        width: 350px;
+        height: 370px;
+        margin-top: 50px;
+        padding-left: 5%;
+        
+    }
+    
+    
+    .card5{
+        width: 350px;
+        height: 370px;
+        margin-top: 50px;
+        
+    }
+    
+    .card6{
+        width: 350px;
+        height: 370px;
+        margin-top: 20px;
+        padding-left: 22%;
+        
+    }
+}
