@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cardapio.css">
+    <title>Cardápio - FastPizza</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu">
+            <h1>Cardápio</h1>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="content">
+            <div class="bttns">
+                <a href="#"><button class="bttnsStyle">PIZZA TRADICIONAL</button></a>
+                <a href="#"><button class="bttnsStyle">PIZZA DOCE</button></a>
+                <a href="#"><button class="bttnsStyle">BEBIDAS</button></a>
+            </div>
+
+            <section class="pizzasSection">
+                <div>
+                    <h2>Pizza Tradicional:</h2>
+                </div>
+
+                <hr>
+
+                <div class="pizzaTitle">
+                    <h3>Pizza de Quatro Queijos - Grande</h3>
+                    <h3 class="priceStyle">R$45,90</h3>
+                </div>
+
+                <div class="pizzaDetails">
+                    <p><b>Ingredientes:</b> Uma combinação harmoniosa de muçarela, gorgonzola, parmesão e provolone sobre uma
+                        massa artesanal fermentada naturalmente. Cada fatia é uma celebração de sabores intensos e texturas
+                        cremosas, finalizada com manjericão para um toque clássico.</p>
+                    <img class="pizzaImg" src="images/pizza-1.png" alt="">
+                    <a href="#" class="add-to-cart" data-name="Pizza de Quatro Queijos - Grande" data-price="45.90"><img width="38px" src="images/add-button.png" alt="Adicionar"></a>
+                </div>
+
+                <hr>
+
+                <div class="pizzaTitle">
+                    <h3>Pizza de Frango com Catupiry - Grande</h3>
+                    <h3 class="priceStyle">R$42,90</h3>
+                </div>
+
+                <div class="pizzaDetails">
+                    <p><b>Ingredientes:</b> Deliciosa massa coberta com molho marinara, frango desfiado
+                        suculento, milho doce, muçarela derretida e o inconfundível Catupiry brasileiro. Esta pizza oferece
+                        uma combinação perfeita de sabores, equilibrando o salgado do frango com a cremosidade do queijo.</p>
+                    <img class="pizzaImg" src="images/pizza-2.png" alt="">
+                    <a href="#" class="add-to-cart" data-name="Pizza de Frango com Catupiry - Grande" data-price="42.90"><img width="38px" src="images/add-button.png" alt="Adicionar"></a>
+                </div>
+
+                <hr>
+
+                <div class="pizzaTitle">
+                    <h3>Pizza Marguerita - Grande</h3>
+                    <h3 class="priceStyle">R$43,90</h3>
+                </div>
+
+                <div class="pizzaDetails">
+                    <p><b>Ingredientes:</b> A essência da culinária italiana em uma pizza, com molho de tomate San Marzano,
+                        muçarela fresca, manjericão e um fio de azeite de oliva extra-virgem. Simples, mas profundamente
+                        saborosa, cada ingrediente é escolhido para celebrar os sabores tradicionais da Itália.</p>
+                    <img class="pizzaImg" src="images/pizza-3.png" alt="">
+                    <a href="#" class="add-to-cart" data-name="Pizza Marguerita - Grande" data-price="43.90"><img width="38px" src="images/add-button.png" alt="Adicionar"></a>
+                </div>
+
+                <hr>
+            </section>
+        </div>
+
+        <aside class="cart">
+            <div class="cart-header">
+                <img class="carrinho-1" src="images/carrinho-1.png" alt="Ícone do carrinho" width="43">
+                <h2>Carrinho</h2>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <div class="cart-item" data-name="Pizza de Quatro Queijos - Grande" data-price="45.90">
+                    <h3>Pizza de Quatro Queijos - Grande</h3>
+                    <div class="counter">
+                        <button class="decrement" onclick="updateQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button class="increment" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <div class="item-price">
+                        <h3>R$<span class="price">45.90</span></h3>
+                    </div>
+                </div>
+                <hr>
+                <div class="cart-item" data-name="Pizza de Frango com Catupiry - Grande" data-price="42.90">
+                    <h3>Pizza de Frango com Catupiry - Grande</h3>
+                    <div class="counter">
+                        <button class="decrement" onclick="updateQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button class="increment" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <div class="item-price">
+                        <h3>R$<span class="price">42.90</span></h3>
+                    </div>
+                </div>
+                <hr>
+                <div class="cart-total">
+                    <h3>Total Produtos:</h3>
+                    <h3 id="total-produtos">R$88.80</h3>
+                </div>
+            </div>
+            <div class="calculate-frete">
+                <input type="text" id="frete" placeholder="CEP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'CEP'">
+                <button onclick="calcularFrete()">Calcular Frete</button>
+            </div>
+            <div class="cart-total">
+                <h3>Total compra (Frete incluso):</h3>
+                <h3 class="price-total" id="total-compra">R$98.80</h3>
+            </div>
+            <div class="calculate-frete1">
+                <button onclick="FinalizarCompra()">Finalizar compra</button>
+            </div>
+        </aside>
+    </main>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
