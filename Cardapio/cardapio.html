@@ -2,101 +2,143 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="cardapio.css">
-    <title>Cardápio - FastPizza</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cardapio.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Cardápio - FastPizza</title>
 </head>
 
 <body>
-    <main>
 
-        <div class="menu">
-            <h1>Cardápio</h1>
-        </div>
+    <!-- NavBar -->
 
-        <div class="bttns">
-            <a href="#"><button class="bttnsStyle">PIZZA TRADICIONAL</button></a>
-            <a href="#"><button class="bttnsStyle">PIZZA DOCE</button></a>
-            <a href="#"><button class="bttnsStyle">BEBIDAS</button></a>
-        </div>
-
-        <section class="pizzasSection">
-            <div>
-                <h2>Pizza Tradicional:</h2>
+    <div>
+      <nav class="navbar navbar-expand-lg" style= "background-color: #ff7018;">
+          <div class="container-fluid text-white">
+            <a class="navbar-brand text-white" href="../Home/home.html">FastPizza</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-gray" aria-current="page" href="../Cardapio/cardapio.html">Cardapio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="../Pagina de Produto/Adicionais.html">Página de Produto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="../Carrinho/carrinho.html">Carrinho</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" aria-current="page" href="../Metodo de Pagamento/pagamento.html">Metodo de Pagamento</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="../Login/Login.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="../Cadastro/Cadastro.html">Cadastro</a>
+                  </li>
+                </ul>
             </div>
+          </div>
+        </nav>
+  </div>
 
-            <!--Começo de uma pizza-->
+  <main>
+    <div class="menu">
+      <h1>Cardápio</h1>
+    </div>
 
-            <hr>
+    <div class="bttns">
+      <a href="#"><button class="bttnsStyle">PIZZA TRADICIONAL</button></a>
+      <a href="#"><button class="bttnsStyle">PIZZA DOCE</button></a>
+      <a href="#"><button class="bttnsStyle">BEBIDAS</button></a>
+    </div>
 
-            <div class="pizzaTitle">
-                <h3>Pizza de Quatro Queijos - Grande</h3>
-                <h3 class="priceStyle">R$45,90</h3>
-            </div>
+    <section class="pizzasSection">
+      <div>
+        <h2>Pizza Tradicional:</h2>
+      </div>
 
-            <div class="pizzaDetails">
-                <p><b>Ingredientes:</b> Uma combinação harmoniosa de muçarela, gorgonzola, parmesão e provolone sobre
-                    uma
-                    massa artesanal fermentada naturalmente. Cada fatia é uma celebração de sabores intensos e texturas
-                    cremosas, finalizada com manjericão para um toque clássico.</p>
-                <img class="pizzaImg" src="assets/pizza-1.png" alt="">
-                <a href=""><img width="38px" src="assets/add-button.png" alt=""></a>
-            </div>
+      <!--Começo de uma pizza-->
 
-            <br>
+      <hr>
 
-            <!--Fim de uma pizza-->
+      <div class="pizzaTitle">
+        <h3>Pizza de Quatro Queijos - Grande</h3>
+        <h3 class="priceStyle">R$45,90</h3>
+      </div>
 
-            <!--Começo de uma pizza-->
+      <div class="pizzaDetails">
+        <p><b>Ingredientes:</b> Uma combinação harmoniosa de muçarela, gorgonzola, parmesão e provolone sobre
+          uma
+          massa artesanal fermentada naturalmente. Cada fatia é uma celebração de sabores intensos e texturas
+          cremosas, finalizada com manjericão para um toque clássico.</p>
+        <img class="pizzaImg" src="assets/pizza-1.png" alt="">
+        <a href=""><img width="38px" src="assets/add-button.png" alt=""></a>
+      </div>
 
-            <hr>
+      <br>
 
-            <div class="pizzaTitle">
-                <h3>Pizza de Frango com Catupiry - Grande - Grande</h3>
-                <h3 class="priceStyle">R$42,90</h3>
-            </div>
+      <!--Fim de uma pizza-->
 
-            <div class="pizzaDetails">
-                <p><b>Ingredientes:</b> Deliciosa massa coberta com molho marinara, frango desfiado
-                    suculento, milho doce, muçarela derretida e o inconfundível Catupiry brasileiro. Esta pizza oferece
-                    uma combinação perfeita de sabores, equilibrando o salgado do frango com a cremosidade do queijo.</p>
-                <img class="pizzaImg" src="assets/pizza-2.png" alt="">
-                <a href=""><img width="38px" src="assets/add-button.png" alt=""></a>
-            </div>
+      <!--Começo de uma pizza-->
 
-            <br>
+      <hr>
 
-            <!--Fim de uma pizza-->
+      <div class="pizzaTitle">
+        <h3>Pizza de Frango com Catupiry - Grande - Grande</h3>
+        <h3 class="priceStyle">R$42,90</h3>
+      </div>
 
-            <!--Começo de uma pizza-->
+      <div class="pizzaDetails">
+        <p><b>Ingredientes:</b> Deliciosa massa coberta com molho marinara, frango desfiado
+          suculento, milho doce, muçarela derretida e o inconfundível Catupiry brasileiro. Esta pizza oferece
+          uma combinação perfeita de sabores, equilibrando o salgado do frango com a cremosidade do queijo.</p>
+        <img class="pizzaImg" src="assets/pizza-2.png" alt="">
+        <a href=""><img width="38px" src="assets/add-button.png" alt=""></a>
+      </div>
 
-            <hr>
+      <br>
 
-            <div class="pizzaTitle">
-                <h3>Pizza Marguerita - Grande</h3>
-                <h3 class="priceStyle">R$43,90</h3>
-            </div>
+      <!--Fim de uma pizza-->
 
-            <div class="pizzaDetails">
-                <p><b>Ingredientes:</b> A essência da culinária italiana em uma pizza, com molho de tomate San Marzano,
-                    muçarela fresca, manjericão e um fio de azeite de oliva extra-virgem. Simples, mas profundamente
-                    saborosa, cada ingrediente é escolhido para celebrar os sabores tradicionais da Itália.</p>
-                <img class="pizzaImg" src="assets/pizza-3.png" alt="">
-                <a href=""><img width="38px" src="assets/add-button.png" alt=""></a>
-            </div>
+      <!--Começo de uma pizza-->
 
-            <br>
+      <hr>
 
-            <hr>
+      <div class="pizzaTitle">
+        <h3>Pizza Marguerita - Grande</h3>
+        <h3 class="priceStyle">R$43,90</h3>
+      </div>
 
-            <!--Fim de uma pizza-->
+      <div class="pizzaDetails">
+        <p><b>Ingredientes:</b> A essência da culinária italiana em uma pizza, com molho de tomate San Marzano,
+          muçarela fresca, manjericão e um fio de azeite de oliva extra-virgem. Simples, mas profundamente
+          saborosa, cada ingrediente é escolhido para celebrar os sabores tradicionais da Itália.</p>
+        <img class="pizzaImg" src="assets/pizza-3.png" alt="">
+        <a href=""><img width="38px" src="assets/add-button.png" alt=""></a>
+      </div>
 
-        </section>
-    </main>
+      <br>
+
+      <hr>
+
+      <!--Fim de uma pizza-->
+
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

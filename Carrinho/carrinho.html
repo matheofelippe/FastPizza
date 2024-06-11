@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="carrinho.css">
+    <title>Carrinho - FastPizza</title>
+</head>
+
+<body>
+        <section class="cart">
+            <div class="cart-header">
+                <img class="carrinho-1" src="images/carrinho-1.png" alt="Ícone do carrinho" width="43">
+                <h2>Carrinho</h2>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <div class="cart-item" data-name="Pizza de Quatro Queijos - Grande" data-price="45.90">
+                    <h3>Pizza de Quatro Queijos - Grande</h3>
+                    <div class="counter">
+                        <button class="decrement" onclick="updateQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button class="increment" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <div class="item-price">
+                        <h3>R$<span class="price">45.90</span></h3>
+                    </div>
+                </div>
+                <hr>
+                <div class="cart-item" data-name="Pizza de Frango com Catupiry - Grande" data-price="42.90">
+                    <h3>Pizza de Frango com Catupiry - Grande</h3>
+                    <div class="counter">
+                        <button class="decrement" onclick="updateQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button class="increment" onclick="updateQuantity(this, 1)">+</button>
+                    </div>
+                    <div class="item-price">
+                        <h3>R$<span class="price">42.90</span></h3>
+                    </div>
+                </div>
+                <hr>
+                <div class="cart-total">
+                    <h3>Total Produtos:</h3>
+                    <h3 id="total-produtos">R$88.80</h3>
+                </div>
+            </div>
+            <div class="calculate-frete">
+                <input type="text" id="frete" placeholder="CEP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'CEP'">
+                <button onclick="calcularFrete()">Calcular Frete</button>
+            </div>
+            <div class="cart-total">
+                <h3>Total compra (Frete incluso):</h3>
+                <h3 class="price-total" id="total-compra">R$98.80</h3>
+            </div>
+            <div class="calculate-frete1">
+                <button onclick="FinalizarCompra()">Finalizar compra</button>
+            </div>
+        </section>
+    </main>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

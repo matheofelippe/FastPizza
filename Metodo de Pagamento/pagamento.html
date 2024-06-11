@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Pagamento</title>
+    <link rel="stylesheet" href="pagamento.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend:wght@100..900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pagamento:</h1>
+        <div class="payment-options">
+            <div class="row">
+                <a href="parte.html" class="option pix" onclick="selectOption(event, 'pix')">
+                    <img src="pix.png" alt="pix">
+                    <h2>PIX</h2>
+                </a>
+                <a href="#" class="option debito" onclick="selectOption(event, 'debito')">
+                    <h2>DÉBITO</h2>
+                </a>
+            </div>
+            <div class="row">
+                <a href="#" class="option saldo" onclick="selectOption(event, 'saldo')">
+                    <h2>SALDO</h2>
+                </a>
+                <a href="#" class="option credito" onclick="selectOption(event, 'credito')">
+                    <h2>CRÉDITO</h2>
+                </a>
+            </div>
+        </div>
+        <div class="total">
+            <p>Total da Compra (Frete Incluso):</p>
+            <p class="amount">R$103,80</p>
+        </div>
+        <a href="parte.html">
+        <button class="finalize-button"  id="">FINALIZAR</button>
+    </a>
+    </div>
+
+    <script src="pagamento.js"></script>
+</body>
+</html>
